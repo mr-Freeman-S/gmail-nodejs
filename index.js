@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 
 
 const app = express()
-const port =  8080
+const port =  process.env.PORT || 5000
 const myAccount = {
     user: process.env.LOGIN , 
     pass: process.env.PASSWORD
