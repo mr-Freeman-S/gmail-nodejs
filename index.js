@@ -5,9 +5,9 @@ const bodyParser = require('body-parser')
 
 
 const app = express()
-const port = 3010
+const port = process.inv.PORT || 8080
 const myAccount = {
-    user: process.env.LOGIN, 
+    user: process.env.LOGIN , 
     pass: process.env.PASSWORD
 }
 app.use(cors())
