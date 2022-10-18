@@ -12,7 +12,7 @@
     const form = document.querySelector('#form')
     form.addEventListener('submit', async (e) => {
         e.preventDefault()
-    axios.post('http://localhost:3010/sendMessage',{name:'Slava',email:'vb@skarbbio.com',message:'hello world'})
+    axios.post('https://gmail-node-sender.herokuapp.com/sendMessage',{name:'Slava',email:'vb@skarbbio.com',message:'hello world'})
         .then(resp => {
             console.log(resp)
         })
